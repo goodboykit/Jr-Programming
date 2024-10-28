@@ -11,7 +11,8 @@ public class MainManager : MonoBehaviour
         public Color TeamColor;
     }
 
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
+
     public Color TeamColor;
 
     private void Awake()
@@ -54,5 +55,7 @@ public class MainManager : MonoBehaviour
         UnityEditor.EditorApplication.ExitPlaymode();
         Application.Quit();
     }
+
+
 
 }

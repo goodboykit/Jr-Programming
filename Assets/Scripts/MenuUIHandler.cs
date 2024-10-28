@@ -20,6 +20,7 @@ public class MenuUIHandler : MonoBehaviour
         ColorPicker.SelectColor(MainManager.Instance.TeamColor);
     }
 
+
     public void StartNew()
     {
         SceneManager.LoadScene(1);
